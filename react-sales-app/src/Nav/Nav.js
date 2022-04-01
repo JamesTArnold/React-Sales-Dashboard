@@ -1,7 +1,7 @@
 import logo from '../logo.svg';
 import "./Nav.scss";
 
-function Nav() {
+function Nav(props) {
   return (
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-dark  bg-primary"  >
@@ -10,7 +10,7 @@ function Nav() {
           <img className="navbar-brand-icon" src={logo} alt="" width="38" height="34" ></img>
             React Sales
           </a>
-          <button
+          {/* <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -20,11 +20,11 @@ function Nav() {
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
-          </button>
+          </button> */}
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <a className={"nav-link " + props.activePage === "Performance" ? "active": ""} aria-current={ props.activePage === "Performance" ?  "page" : "false"} href="#" >
                   Performance
                 </a>
               </li>
