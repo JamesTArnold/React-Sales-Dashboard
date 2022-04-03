@@ -1,38 +1,25 @@
+import { useState } from "react";
 import "./App.scss";
 import Nav from "./Nav/Nav.js";
 import React from "react";
 
-class Enum {
-  constructor(...keys) {
-    keys.forEach((key, i) => {
-      this[key] = i;
-    });
-    Object.freeze(this);
-  }
-
-  *[Symbol.iterator]() {
-    for (let key of Object.keys(this)) yield key;
-  }
-}
+const App = () => {
+  const [isPerformanceActive, setIsPerformanceActive] = useState(false);
+  const navClick = (check) => {
+    setIsPerformanceActive(check);
+    console.log("🚀 ~ file: App.js ~ line 10 ~ navClick ~ isPerformanceActive", isPerformanceActive)
+  };
 
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isLoading: true,
-      data: [],
-      activePage :new Enum("Performance", "Opportunities"),
-      error: null,
-    };
-  }
-  render() {
-    return (
-      <div className="App">
-        <Nav activePage={this.state.activePage}/>
-      </div>
-    );
-  }
-}
+
+  return (
+    <div className="App">
+      <Nav
+        isPerformanceActive={isPerformanceActive}
+        handleNav={navClick}
+      />
+    </div>
+  );
+};
 
 export default App;
