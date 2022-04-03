@@ -12,17 +12,6 @@
     &-left {
       display: grid;
       grid: 33% 33% 33%;
-
-      &-container {
-        display: grid;
-        grid: auto / 20% 80%;
-  
-        &-total {
-          display: grid;
-          align-content: center;
-          grid: 50% 50% / auto;
-        }
-      }
     }
     
   }

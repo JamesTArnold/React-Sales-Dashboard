@@ -1,4 +1,6 @@
 import "./Performance.scss";
+import SummaryYTD from "./SummaryYTD/SummaryYTD";
+
 
 import { useState } from "react";
 
@@ -7,7 +9,7 @@ const Performance = () => {
     <div className="layout">
       <div className="layout-top">
         <div className="layout-top-left">
-          <div className="layout-top-left-container"><div></div><div className="layout-top-left-container-total"> <div>money</div><div>title</div></div></div>
+            <SummaryYTD />         
           <div>row</div>
           <div>row</div>
         </div>

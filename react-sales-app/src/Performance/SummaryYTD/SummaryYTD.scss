@@ -1,0 +1,23 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid: auto / 20% 80%;
+  }
+
+.total-container {
+    display: grid;
+    grid: 50% 50% / auto;
+  }
+
+.ytd {
+    display: grid;
+    align-items: end;
+    justify-items: start;
+  
+}
+
+.title {
+    display: grid;
+    align-items: start;
+    justify-items: start;
+}
