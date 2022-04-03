@@ -42,6 +42,7 @@ const Nav = ({ isPerformanceActive, handleNav }) => {
                 <a
                   onClick={() => handleNav(false)}
                   className={`nav-link${isPerformanceActive ? "" : " active"}`}
+                  href="#"
                 >
                   Opportunities
                 </a>

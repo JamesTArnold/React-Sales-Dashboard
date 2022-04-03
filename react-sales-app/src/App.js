@@ -1,13 +1,14 @@
 import { useState } from "react";
 import "./App.scss";
-import Nav from "./Nav/Nav.js";
 import React from "react";
 
+import Nav from "./Nav/Nav.js";
+import Performance from "./Performance/Performance.js";
+
 const App = () => {
-  const [isPerformanceActive, setIsPerformanceActive] = useState(false);
+  const [isPerformanceActive, setIsPerformanceActive] = useState(true);
   const navClick = (check) => {
     setIsPerformanceActive(check);
-    console.log("🚀 ~ file: App.js ~ line 10 ~ navClick ~ isPerformanceActive", isPerformanceActive)
   };
 
 
@@ -18,6 +19,7 @@ const App = () => {
         isPerformanceActive={isPerformanceActive}
         handleNav={navClick}
       />
+      <Performance />
     </div>
   );
 };
