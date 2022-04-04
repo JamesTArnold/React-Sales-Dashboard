@@ -10,8 +10,7 @@ const App = () => {
   const navClick = (check) => {
     setIsPerformanceActive(check);
   };
-
-
+  
 
   return (
     <div className="App">

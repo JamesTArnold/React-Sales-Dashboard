@@ -9,7 +9,7 @@ const Performance = () => {
     <div className="layout">
       <div className="layout-top">
         <div className="layout-top-left">
-            <SummaryYTD />         
+            <SummaryYTD title={"NEW CUSTOMER | YTD"} total={133} icon={"person"} />         
           <div>row</div>
           <div>row</div>
         </div>
