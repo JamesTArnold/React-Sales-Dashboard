@@ -5,6 +5,7 @@ import SummaryYTD from "./SummaryYTD/SummaryYTD";
 
 import { useState } from "react";
 import WeeklySales from "./WeeklySales/WeeklySales";
+import SalesTarget from "./SalesTarget/SalesTarget";
 
 const Performance = () => {
   return (
@@ -12,13 +13,13 @@ const Performance = () => {
       <div  className="layout-top bg-info text-white">
         <div className="layout-top-left">
             <SummaryYTD title={"NEW CUSTOMER | YTD"} total={133} icon={"userPlus"} />         
-            <SummaryYTD title={"NEW CUSTOMER | YTD"} total={133} icon={"signal"} />         
-            <SummaryYTD title={"NEW CUSTOMER | YTD"} total={133} icon={"coins"} />         
+            <SummaryYTD title={"SALES REVENUE | YTD"} total={"$ " + 133} icon={"signal"} />         
+            <SummaryYTD title={"PROFIT | YTD"} total={"$ " + 133} icon={"coins"} />         
         </div>
         <div className="layout-top-middle border-start border-end">
           <WeeklySales />
         </div>
-        <div className="layout-top-right">col</div>
+        <div className="layout-top-right"><SalesTarget /></div>
       </div>
       <div className="layout-bottom">
         <div>row</div>

@@ -1,14 +1,18 @@
 .weekly {
   &-container {
     display: grid;
-    grid: 100px 220px / auto;
+    grid: 1fr 3fr/auto;
     justify-items: center;
+    height: 100%;
+    align-items: center;
+  
   }
   &-title {
     &-container {
       display: grid;
-      grid: 50px 50px / auto;
+      grid: 1fr 1fr / auto;
       justify-items: center;
+      align-self: end;
     }
 
     &-total {
