@@ -1,3 +1,4 @@
+
 .layout {
   //   overflow: hidden;
   height: 100%;
@@ -8,7 +9,6 @@
   &-top {
     display: grid;
     grid: auto / 33% 33% 33%;
-
     &-left {
       display: grid;
       grid: 33% 33% 33%;

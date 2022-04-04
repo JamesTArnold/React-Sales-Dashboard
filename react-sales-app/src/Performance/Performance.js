@@ -7,13 +7,13 @@ import { useState } from "react";
 const Performance = () => {
   return (
     <div className="layout">
-      <div className="layout-top">
+      <div  className="layout-top bg-info text-white">
         <div className="layout-top-left">
-            <SummaryYTD title={"NEW CUSTOMER | YTD"} total={133} icon={"person"} />         
-          <div>row</div>
-          <div>row</div>
+            <SummaryYTD title={"NEW CUSTOMER | YTD"} total={133} icon={"userPlus"} />         
+            <SummaryYTD title={"NEW CUSTOMER | YTD"} total={133} icon={"signal"} />         
+            <SummaryYTD title={"NEW CUSTOMER | YTD"} total={133} icon={"coins"} />         
         </div>
-        <div className="layout-top-middle">col</div>
+        <div className="layout-top-middle border-start border-end">col</div>
         <div className="layout-top-right">col</div>
       </div>
       <div className="layout-bottom">
