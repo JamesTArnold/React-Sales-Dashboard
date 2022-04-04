@@ -2,7 +2,9 @@ import "./Performance.scss";
 import SummaryYTD from "./SummaryYTD/SummaryYTD";
 
 
+
 import { useState } from "react";
+import WeeklySales from "./WeeklySales/WeeklySales";
 
 const Performance = () => {
   return (
@@ -13,7 +15,9 @@ const Performance = () => {
             <SummaryYTD title={"NEW CUSTOMER | YTD"} total={133} icon={"signal"} />         
             <SummaryYTD title={"NEW CUSTOMER | YTD"} total={133} icon={"coins"} />         
         </div>
-        <div className="layout-top-middle border-start border-end">col</div>
+        <div className="layout-top-middle border-start border-end">
+          <WeeklySales />
+        </div>
         <div className="layout-top-right">col</div>
       </div>
       <div className="layout-bottom">
@@ -23,6 +27,7 @@ const Performance = () => {
       </div>
     </div>
   );
+
 };
 
 export default Performance;

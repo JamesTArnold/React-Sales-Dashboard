@@ -6,7 +6,7 @@ import { faCoins } from "@fortawesome/free-solid-svg-icons";
 
 const SummaryYTD = ({ total, title, icon }) => {
   return (
-    <div className="main-container border-bottom">
+    <div className="summary-container border-bottom">
       <div className="icon">
         <FontAwesomeIcon
           icon={

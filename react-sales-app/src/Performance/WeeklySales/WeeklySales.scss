@@ -1,0 +1,19 @@
+.weekly {
+  &-container {
+    display: grid;
+    grid: 100px 220px / auto;
+    justify-items: center;
+  }
+  &-title {
+    &-container {
+      display: grid;
+      grid: 50px 50px / auto;
+      justify-items: center;
+    }
+
+    &-total {
+      display: grid;
+      align-items: end;
+    }
+  }
+}
