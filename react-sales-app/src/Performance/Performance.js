@@ -7,6 +7,7 @@ import WeeklySales from "./WeeklySales/WeeklySales";
 import SalesTarget from "./SalesTarget/SalesTarget";
 import ARPU from "./ARPU/ARPU";
 import CLV from "./CLV/CLV";
+import CAC from "./CAC/CAC";
 
 const Performance = () => {
   return (
@@ -43,7 +44,9 @@ const Performance = () => {
         <div>
           <CLV />
         </div>
-        <div>row</div>
+        <div>
+          <CAC />
+        </div>
       </div>
     </div>
   );
