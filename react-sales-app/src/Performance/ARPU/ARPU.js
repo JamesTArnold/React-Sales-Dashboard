@@ -3,11 +3,21 @@ import Chart from "react-apexcharts";
 
 const ARPU = ({ averageWeeklySalesRevenue }) => {
   let options = {
+    title: {
+      text: "ARPU | LAST 12 MONTHS",
+      style: {
+        fontSize: "8px",
+        color: "#26cff2",
+      },
+    },
     chart: {
       id: "ARPU",
       toolbar: {
         autoSelected: "pan",
         show: false,
+      },
+      selection: {
+        enabled: false,
       },
     },
     grid: {
@@ -59,15 +69,19 @@ const ARPU = ({ averageWeeklySalesRevenue }) => {
   return (
     <div className="arpu-container">
       <div className="arpu-title-container">
-        <div>AVERAGE WEEKLY SALES REVENUE</div>
-        <div className="arpu-title-total">${999}</div>
+        <h4 className="text-info">AVERAGE REVENUE PER UNIT</h4>
+        <h1 className="arpu-title-total">
+          <span className="arpu-title-pill badge rounded-pill bg-info">
+            ${999}
+          </span>
+        </h1>
       </div>
       <Chart
         options={options}
         series={series}
         type="area"
         width={800}
-        height={150}
+        height={107}
       />
     </div>
   );

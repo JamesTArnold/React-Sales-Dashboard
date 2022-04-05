@@ -13,13 +13,18 @@
         grid: 1fr 1fr / auto;
         height: 100%;
         justify-items: center;
-        align-self: end;
+        align-items: center;
       }
   
       &-total {
         display: grid;
         align-items: end;
-        font-size: 2rem;
+        font-size: 2em;
+        
+      }
+
+      &-pill{
+          width: 200px;
       }
     }
   }
