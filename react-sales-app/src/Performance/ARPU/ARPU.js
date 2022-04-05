@@ -6,7 +6,8 @@ const ARPU = ({ averageWeeklySalesRevenue }) => {
     title: {
       text: "ARPU | LAST 12 MONTHS",
       style: {
-        fontSize: "8px",
+        fontSize: "12px",
+        fontWeight: "100",
         color: "#26cff2",
       },
     },
@@ -67,7 +68,7 @@ const ARPU = ({ averageWeeklySalesRevenue }) => {
   ];
 
   return (
-    <div className="arpu-container">
+    <div className="arpu-container border-bottom">
       <div className="arpu-title-container">
         <h4 className="text-info">AVERAGE REVENUE PER UNIT</h4>
         <h1 className="arpu-title-total">

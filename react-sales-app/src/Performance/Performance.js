@@ -2,9 +2,11 @@ import "./Performance.scss";
 import SummaryYTD from "./SummaryYTD/SummaryYTD";
 
 import { useState } from "react";
+
 import WeeklySales from "./WeeklySales/WeeklySales";
 import SalesTarget from "./SalesTarget/SalesTarget";
 import ARPU from "./ARPU/ARPU";
+import CLV from "./CLV/CLV";
 
 const Performance = () => {
   return (
@@ -38,7 +40,9 @@ const Performance = () => {
         <div>
           <ARPU  />
         </div>
-        <div>row</div>
+        <div>
+          <CLV />
+        </div>
         <div>row</div>
       </div>
     </div>
