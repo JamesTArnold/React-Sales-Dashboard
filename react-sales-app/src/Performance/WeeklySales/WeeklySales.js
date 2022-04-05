@@ -1,7 +1,7 @@
 import "./WeeklySales.scss";
 import Chart from "react-apexcharts";
 
-const WeeklySales = () => {
+const WeeklySales = ({averageWeeklySalesRevenue}) => {
   let options = {
     chart: {
       id: "weeklySales",
@@ -39,7 +39,7 @@ const WeeklySales = () => {
 
   return (
     <div className="weekly-container">
-      <div className="weekly-title-container"><div className="weekly-title-total">total</div><div>AVERAGE WEEKLY SALES REVENUE</div></div>
+      <div className="weekly-title-container"><div className="weekly-title-total">${averageWeeklySalesRevenue}</div><div>AVERAGE WEEKLY SALES REVENUE</div></div>
       <Chart
         options={options}
         series={series}

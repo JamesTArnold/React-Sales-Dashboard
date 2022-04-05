@@ -1,23 +1,23 @@
 .target {
+  &-container {
+    display: grid;
+    grid: 1fr 3fr / auto;
+    justify-items: center;
+    height: 100%;
+    align-items: start;
+  }
+  &-title {
     &-container {
-        display: grid;
-        grid: 1fr 3fr/auto;
-        justify-items: center;
-        height: 100%;
-        align-items: start;
+      display: grid;
+      grid: 1fr 1fr / auto;
+      justify-items: center;
+      align-self: end;
     }
-    &-title {
-      &-container {
-        display: grid;
-        grid: 1fr 1fr / auto;
-        justify-items: center;
-        align-self: end;
-      }
-  
-      &-total {
-        display: grid;
-        align-items: end;
-      }
+
+    &-total {
+      font-size: 2rem;
+      display: grid;
+      align-items: end;
     }
   }
-  
+}

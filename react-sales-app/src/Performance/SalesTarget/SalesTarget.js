@@ -2,7 +2,7 @@ import "./SalesTarget.scss";
 
 import Chart from "react-apexcharts";
 
-const SalesTarget = () => {
+const SalesTarget = ({aboveSalesTarget, }) => {
   let options = {
     chart: {
       id: "weeklySales",
@@ -25,7 +25,7 @@ const SalesTarget = () => {
   return (
     <div className="target-container">
       <div className="target-title-container">
-        <div className="target-title-total">$ 463,942</div>
+        <div className="target-title-total">${aboveSalesTarget}</div>
         <div>ABOVE SALES TARGET | YTD</div>
       </div>
       <Chart
