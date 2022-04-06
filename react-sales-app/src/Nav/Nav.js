@@ -26,7 +26,7 @@ const Nav = ({ isPerformanceActive, handleNav }) => {
           >
             <span className="navbar-toggler-icon"></span>
           </button> */}
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          {/* <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a
@@ -48,7 +48,7 @@ const Nav = ({ isPerformanceActive, handleNav }) => {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </nav>
     </div>
