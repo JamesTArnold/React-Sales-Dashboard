@@ -5,11 +5,6 @@ const WeeklySales = ({
   averageWeeklySalesRevenue,
   weeklySalesRevenue,
 }) => {
-  console.log(
-    "🚀 ~ file: WeeklySales.js ~ line 5 ~ WeeklySales ~ averageWeeklySalesRevenue",
-    averageWeeklySalesRevenue
-  );
- 
   let options = {
     chart: {
       id: "weeklySales",

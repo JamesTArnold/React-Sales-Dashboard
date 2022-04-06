@@ -20,6 +20,7 @@ const Performance = () => {
 
   useEffect(() => {
     const getSalesPerformanceData = async () => {
+      
       const salesPerformanceDataFromServer = await fetchSalesPerformance();
       setSalesPerformanceData(salesPerformanceDataFromServer);
       let weeklySalesREV = [];
@@ -36,8 +37,7 @@ const Performance = () => {
         }
       }
 
-      for (const property in salesPerformanceDataFromServer.YTD
-        .weeklySalesREV) {
+      for (const property in salesPerformanceDataFromServer.ARPU) {
           monthlyARPU.push(
             salesPerformanceDataFromServer.ARPU[property]
           );
@@ -107,19 +107,19 @@ const Performance = () => {
             aboveSalesTarget={currencyFormatter.format(
               salesPerformanceData?.YTD?.aboveSalesTarget
             )}
-            salesTargetMet={salesPerformanceData?.YTD?.targetMet}
+            salesTargetMet={salesPerformanceData?.YTD?.targetMet ? salesPerformanceData?.YTD?.targetMet : 0}
           />
         </div>
       </div>
       <div className="layout-bottom">
         <div>
-          <ARPU />
+          <ARPU monthlyARPU={monthlyARPU} />
         </div>
         <div>
-          <CLV />
+          <CLV monthlyCLV={monthlyCLV} />
         </div>
         <div>
-          <CAC />
+          <CAC monthlyCAC={monthlyCAC}/>
         </div>
       </div>
     </div>

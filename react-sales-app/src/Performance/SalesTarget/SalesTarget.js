@@ -2,7 +2,8 @@ import "./SalesTarget.scss";
 
 import Chart from "react-apexcharts";
 
-const SalesTarget = ({aboveSalesTarget, salesTargetMet}) => {
+const SalesTarget = ({ aboveSalesTarget, salesTargetMet }) => {
+  
   let options = {
     chart: {
       id: "weeklySales",
@@ -10,15 +11,14 @@ const SalesTarget = ({aboveSalesTarget, salesTargetMet}) => {
         show: false,
       },
     },
-    labels: ['TARGET MET'],
+    labels: ["TARGET MET"],
     tooltip: {
       enabled: false,
     },
- 
-    
-    
   };
-  let series = [salesTargetMet];
+  let series = [
+       salesTargetMet,
+  ];
 
   return (
     <div className="target-container">
@@ -26,12 +26,7 @@ const SalesTarget = ({aboveSalesTarget, salesTargetMet}) => {
         <div className="target-title-total">{aboveSalesTarget}</div>
         <div>ABOVE SALES TARGET | YTD</div>
       </div>
-      <Chart
-        options={options}
-        series={series}
-        type="radialBar"
-        height={330}
-      />
+      <Chart options={options} series={series} type="radialBar" height={330} />
     </div>
   );
 };

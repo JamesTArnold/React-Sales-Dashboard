@@ -1,7 +1,8 @@
 import "./CLV.scss";
 import Chart from "react-apexcharts";
 
-const CLV = ({ averageWeeklySalesRevenue }) => {
+const CLV = ({ monthlyCLV }) => {
+  
     let options = {
       title: {
         text: "CLV | LAST 12 MONTHS",
@@ -71,7 +72,7 @@ const CLV = ({ averageWeeklySalesRevenue }) => {
     let series = [
       {
         name: "series-1",
-        data: [30, 40, 35, 50, 49, 60, 70, 91, 125, 30, 40, 35],
+        data: monthlyCLV,
       },
     ];
   
@@ -81,7 +82,7 @@ const CLV = ({ averageWeeklySalesRevenue }) => {
           <h4 className="text-info">CUSTOMER LIFETIME VALUE</h4>
           <h1 className="arpu-title-total">
             <span className="arpu-title-pill badge rounded-pill bg-info">
-              ${999}
+              ${monthlyCLV[0]}
             </span>
           </h1>
         </div>
