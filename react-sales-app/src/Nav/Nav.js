@@ -5,7 +5,7 @@ const Nav = ({ isPerformanceActive, handleNav }) => {
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-dark  bg-primary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <img
               className="navbar-brand-icon"
               src={logo}
